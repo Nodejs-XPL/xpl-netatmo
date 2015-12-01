@@ -5,6 +5,7 @@ var Xpl = require("xpl-api");
 var commander = require('commander');
 var Netatmo = require("netatmo");
 var os = require('os');
+var util = require('util');
 
 commander.version(require("./package.json").version);
 commander.option("-u, --username <username>", "Netatmo username");
