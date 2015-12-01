@@ -7,8 +7,10 @@
   },
   "repository": { "type": "git", "url": "https://github.com/Nodejs-XPL/xpl-netatmo.git" },
   "dependencies": {
-	  "xpl-api": "~1.0.12",
+	  "xpl-api": "~1.4",
 	  "commander": "~2.3",
+	  "async": "latest",
+	  "debug": "latest",
 	  "netatmo": "git://github.com/oeuillot/netatmo.git"
   },
   "keywords": [
