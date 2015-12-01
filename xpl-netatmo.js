@@ -193,7 +193,7 @@ function scanDevice(device, devices, modifs, aliases) {
           device : key,
           type : "battery",
           current : b,
-          date : currentValues.batteryDate.toISOString(),
+          date : currentValues.BatteryDate.toISOString(),
           unit : '%'
         });
       }
