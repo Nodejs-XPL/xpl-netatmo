@@ -193,8 +193,8 @@ function scanDevice(device, devices, modifs, aliases) {
           device : key,
           type : "battery",
           current : b,
-          date : currentValues.BatteryDate.toISOString(),
-          unit : '%'
+          unit : '%',
+          date : currentValues.BatteryDate.toISOString()
         });
       }
     }
@@ -219,8 +219,8 @@ function scanDevice(device, devices, modifs, aliases) {
       device : key,
       type : refs[dt].name,
       current : currentValues[dt],
-      date : currentValues[dt + "Date"].toISOString(),
-      unit : refs[dt].unit
+      unit : refs[dt].unit,
+      date : currentValues[dt + "Date"].toISOString()
     });
   });
 
@@ -250,7 +250,7 @@ function updateDatas(xpl, netatmo, devices, aliases, callback) {
 
     list.devices.forEach(function(device) {
 
-      scanDevice(device, devices, modifs);
+      scanDevice(device, devices, modifs, aliases);
 
       if (device.modules) {
         device.modules.forEach(function(mod) {
