@@ -85,7 +85,7 @@ commander.command('start').description("Start processing Netatmo datas")
               }
 
               async.eachSeries(modifs, function(body, callback) {
-                xpl.sendXplStat(body, "sensor.basic", callback);
+                xpl.sendXplTrig(body, "sensor.basic", callback);
 
               }, function(error) {
                 if (error) {
@@ -266,7 +266,7 @@ function updateDatas(xpl, netatmo, devices, aliases, callback) {
     debug("Send modifs", modifs);
 
     async.eachSeries(modifs, function(body, callback) {
-      xpl.sendXplStat(body, "sensor.basic", callback);
+      xpl.sendXplTrig(body, "sensor.basic", callback);
     }, callback);
   });
 }
