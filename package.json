@@ -1,0 +1,25 @@
+{
+  "name": "xpl-netatmo",
+  "version": "0.0.1",
+  "description": "XPL bridge for Netatmo",
+  "bin": {
+  	"xpl-netatmo": "./bin/xpl-netatmo"
+  },
+  "repository": { "type": "git", "url": "https://github.com/Nodejs-XPL/xpl-netatmo.git" },
+  "dependencies": {
+	  "xpl-api": "~1.0.12",
+	  "commander": "~2.3",
+	  "netatmo": "git://github.com/oeuillot/netatmo.git"
+  },
+  "keywords": [
+    "XPL",
+    "netatmo"
+  ],
+  "files": [
+    "xpl-netatmo.js",
+    "bin/xpl-netatmo"
+	],
+  "author": "Olivier Oeuillot",
+  "license": "GPL",
+  "readmeFilename": "README.md"
+}
