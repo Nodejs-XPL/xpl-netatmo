@@ -53,7 +53,7 @@ commander.command('start').description("Start processing Netatmo datas")
 
             setInterval(updateDatas.bind(xpl, xpl, netatmo, devices),
                 1000 * 60 * 10);
-            updateDatas(xp, netatmo, devices);
+            updateDatas(xpl, netatmo, devices);
           });
         });
 
