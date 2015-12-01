@@ -14,6 +14,8 @@ commander.option("-u, --username <username>", "Netatmo username");
 commander.option("-p, --password <password>", "Netatmo password");
 commander.option("--client_id <client_id>", "Netatmo client Id");
 commander.option("--client_secret <client_secret>", "Netatmo client secret");
+commander.option("-a, --deviceAliases <aliases>", "Devices aliases");
+
 Xpl.fillCommander(commander);
 
 commander.option("--heapDump", "Enable heap dump (require heapdump)");
