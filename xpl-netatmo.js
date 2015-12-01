@@ -79,7 +79,7 @@ commander.command('start').description("Start processing Netatmo datas")
                     type : refs[currentKey].name,
                     current : currentValues[currentKey],
                     date : currentValues[currentKey + "Date"].toISOString(),
-                    unit : refs[currentKey].unit
+                    units : refs[currentKey].unit
                   });
                 }
               }
@@ -219,7 +219,7 @@ function scanDevice(device, devices, modifs, aliases) {
       device : key,
       type : refs[dt].name,
       current : currentValues[dt],
-      unit : refs[dt].unit,
+      units : refs[dt].unit,
       date : currentValues[dt + "Date"].toISOString()
     });
   });
